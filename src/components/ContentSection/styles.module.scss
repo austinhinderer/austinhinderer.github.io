@@ -1,0 +1,46 @@
+.root {
+    padding: 4rem 0;
+    text-align: center
+}
+
+.titleAccent {
+    position: relative
+}
+
+.titleAccent:after {
+    content: "";
+    display: block;
+    position: absolute
+}
+
+h1.titleAccent {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 3.51563rem;
+    margin-bottom: 3rem
+}
+
+h1.titleAccent:after {
+    height: .4rem;
+    background-color: #f55b44;
+    width: 3rem;
+    margin-right: -1.5rem;
+    top: 4rem;
+    right: 50%;
+    border-radius: .4rem
+}
+
+h2.titleAccent {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 2.25rem
+}
+
+h2.titleAccent:after {
+    height: .2rem;
+    background-color: #eee;
+    width: 80%;
+    top: 2.75rem;
+    right: 10%;
+    border-radius: .2rem
+}

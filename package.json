@@ -6,6 +6,7 @@
   "keywords": [
     "gatsby"
   ],
+  "type": "module",
   "scripts": {
     "deploy": "gatsby build && gh-pages -d public -b gatsby-output",
     "develop": "gatsby develop",
@@ -13,7 +14,9 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "npx eslint .",
+    "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
     "classnames": "^2.5.1",
@@ -26,13 +29,20 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.14.0",
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-sass": "^6.13.1",
     "gh-pages": "^6.2.0",
+    "globals": "^15.12.0",
+    "prettier": "3.3.3",
     "sass": "^1.80.4",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^8.13.0"
   }
 }

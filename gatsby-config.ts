@@ -12,7 +12,13 @@ const config: GatsbyConfig = {
   plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png"
+      "background_color": "#e3654e",
+      "crossOrigin": `use-credentials`,
+      "display": "standalone",
+      "icon": "src/images/icon.png",
+      "name": "AustinHinderer.com",
+      "short_name": "AustinH",
+      "theme_color": "#e3654e",
     }
   }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',

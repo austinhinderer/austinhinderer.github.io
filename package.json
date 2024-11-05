@@ -6,7 +6,6 @@
   "keywords": [
     "gatsby"
   ],
-  "type": "module",
   "scripts": {
     "deploy": "gatsby build && gh-pages -d public -b gatsby-output",
     "develop": "gatsby develop",

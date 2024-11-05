@@ -2,17 +2,13 @@ import React, { PropsWithChildren } from 'react';
 
 import * as styles from './styles.module.scss';
 
-export type ButtonProps = {
-    onClick?: React.MouseEventHandler<HTMLButtonElement>;
-};
-
-const Button = (props: PropsWithChildren<ButtonProps>) => {
-    const { children, onClick } = props;
+const Button = (props: PropsWithChildren) => {
+    const { children } = props;
 
     return (
-        <button className={styles.root} onClick={onClick}>
+        <a className={styles.root} href="/resume.pdf">
             {children}
-        </button>
+        </a>
     )
 };
 

@@ -21,11 +21,9 @@ const IndexPage: React.FC<PageProps> = () => {
                 Health</a>, <a href="http://www.cbsradio.com/">CBS Radio</a>, and <a
                   href="http://www.intelius.com/">Intellius</a>. Currently I'm delighting customers at Amazon Web Services.</p>
 
-          <Button onClick={() => { }}>Download my resume</Button>
+          <Button>Download my resume</Button>
           {/* <a className="resume" href="/resume.pdf">Download my
           resume</a> */}
-
-
 
           <br /><em><b>Note:</b> I am not accepting contract positions at this time.</em>
         </ContentSection>
